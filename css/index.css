@@ -142,6 +142,7 @@ header h1 {
 .cat ul {
   display: flex;
   flex-wrap: wrap;
+  background-color: #fff;
 }
 .cat ul a.flex-center {
   margin: 2.66666667vw 0;
@@ -171,38 +172,48 @@ header h1 {
   height: 100%;
 }
 .like .hd {
-  height: 8.8vw;
+  height: 11.73333333vw;
   text-align: center;
-  line-height: 8.8vw;
+  line-height: 11.73333333vw;
 }
-.like .bd li {
+.like .bd ul::after {
+  content: '已经到底了呢~';
+  display: block;
+  height: 8vw;
+  margin-bottom: 16vw;
+  color: #999;
+  font-size: 3.2vw;
+  text-align: center;
+  line-height: 8vw;
+}
+.like .bd ul li {
   margin-bottom: 1.33333333vw;
 }
-.like .bd li:last-child {
-  margin-bottom: 17.33333333vw;
+.like .bd ul li:last-child {
+  margin-bottom: 0vw;
 }
-.like .bd li a {
+.like .bd ul li a {
   display: flex;
   padding: 2.93333333vw;
   background-color: #fff;
 }
-.like .bd li a .pic {
+.like .bd ul li a .pic {
   width: 34.66666667vw;
   height: 34.66666667vw;
   background-color: #8df;
   margin-right: 6.66666667vw;
 }
-.like .bd li a .pic img {
+.like .bd ul li a .pic img {
   width: 100%;
   height: 100%;
 }
-.like .bd li a .info {
+.like .bd ul li a .info {
   color: #999;
   font-size: 3.46666667vw;
   line-height: 5.54666667vw;
   padding-top: 2.93333333vw;
 }
-.like .bd li a .info h4 {
+.like .bd ul li a .info h4 {
   margin-bottom: 1.06666667vw;
   width: 52.8vw;
   color: #484848;
@@ -215,7 +226,7 @@ header h1 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
-.like .bd li a .info .price span {
+.like .bd ul li a .info .price span {
   margin-right: 2.13333333vw;
   color: #f03c3c;
   font-size: 4.26666667vw;

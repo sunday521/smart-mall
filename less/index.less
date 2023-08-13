@@ -131,6 +131,7 @@ header {
     ul {
         display: flex;
         flex-wrap: wrap;
+        background-color: #fff;
         a.flex-center {
             margin: (10 / @vw) 0;
             width: (75 / @vw);
@@ -170,60 +171,81 @@ header {
 // like
 .like {
     .hd {
-        height: (33 / @vw);
+        height: (44 / @vw);
         // background: pink;
         text-align: center;
-        line-height: (33 / @vw);
+        line-height: (44 / @vw);
     }
     .bd {
-        li {
-            margin-bottom: (5 / @vw);
-            &:last-child {
-                margin-bottom: (65 / @vw);
+        ul {
+
+            &::after {
+                content: '已经到底了呢~';
+                display: block;
+                height: (30 / @vw);
+                // background-color: pink;
+                margin-bottom: (60 / @vw);
+                color: #999;
+                font-size: (12 / @vw);
+                text-align: center;
+                line-height: (30 / @vw);
             }
-            a {
-                display: flex;
-                padding: (11 / @vw);
-                background-color: #fff;
-                .pic {
-                    width: (130 / @vw);
-                    height: (130 / @vw);
-                    background-color: #8df;
-                    margin-right: (25 / @vw);
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
+            li {
+                margin-bottom: (5 / @vw);
+        
+                &:last-child {
+                    margin-bottom: (0 / @vw);
                 }
-                .info {
-                    color: #999;
-                    font-size: (13 / @vw);
-                    line-height: (20.8 / @vw);
-                    padding-top: (11 / @vw);
-                    h4 {
-                        margin-bottom: (4/ @vw);
-                        width: (198 / @vw);
-                        color: #484848;
-                        font-size: (14 / @vw);
-                        line-height: (18.2 / @vw);
-                        // 多行文本溢出隐藏
-                        display: -webkit-box;
-                        word-break: break-all;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 2;
-                    }
-                    .price {
-                        span {
-                            margin-right: (8 / @vw);
-                            color: #f03c3c;
-                            font-size: (16 / @vw);
-                            line-height: (25 / @vw);
+        
+                a {
+                    display: flex;
+                    padding: (11 / @vw);
+                    background-color: #fff;
+        
+                    .pic {
+                        width: (130 / @vw);
+                        height: (130 / @vw);
+                        background-color: #8df;
+                        margin-right: (25 / @vw);
+        
+                        img {
+                            width: 100%;
+                            height: 100%;
                         }
                     }
+        
+                    .info {
+                        color: #999;
+                        font-size: (13 / @vw);
+                        line-height: (20.8 / @vw);
+                        padding-top: (11 / @vw);
+        
+                        h4 {
+                            margin-bottom: (4/ @vw);
+                            width: (198 / @vw);
+                            color: #484848;
+                            font-size: (14 / @vw);
+                            line-height: (18.2 / @vw);
+                            // 多行文本溢出隐藏
+                            display: -webkit-box;
+                            word-break: break-all;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                        }
+        
+                        .price {
+                            span {
+                                margin-right: (8 / @vw);
+                                color: #f03c3c;
+                                font-size: (16 / @vw);
+                                line-height: (25 / @vw);
+                            }
+                        }
+                    }
+        
                 }
-                
             }
         }
     }
