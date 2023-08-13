@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 设置网页统一的字体大小、行高、字体系列相关属性 */
+body {
+  color: #333;
+  font-family: PingFang-Medium, PingFangSC-Regular, Heiti, Heiti SC, DroidSans, DroidSansFallback, Microsoft YaHei, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+ul,
+ol {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+input {
+  border: none;
+  outline: none;
+  color: #333;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #fafafa;
+}
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 11.73333333vw;
+  background-color: #c21401;
+}
+header h1 {
+  color: #fff;
+  font-size: 4.26666667vw;
+  font-weight: 700;
+  text-align: center;
+  line-height: 11.73333333vw;
+}
+.search {
+  padding: 2.93333333vw;
+  margin-top: 11.73333333vw;
+  background-color: #f1f1f2;
+}
+.search a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94.13333333vw;
+  height: 8.8vw;
+  background-color: #fff;
+  border-radius: 1.33333333vw;
+  color: #999;
+  font-size: 3.73333333vw;
+}
+.search a span {
+  margin-left: 1.33333333vw;
+}
+.banner {
+  width: 100vw;
+  overflow: hidden;
+}
+.banner ul {
+  display: flex;
+  animation: lunbo 5s steps(3) infinite;
+}
+.banner ul a {
+  display: block;
+  width: 100vw;
+  height: 49.33333333vw;
+  background-color: pink;
+}
+.banner ul a img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes lunbo {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-300vw);
+  }
+}
+.adv {
+  display: flex;
+  align-items: center;
+  padding: 1.33333333vw 3.46666667vw;
+  background-color: #f2dbdb;
+  color: red;
+  font-size: 4vw;
+}
+.adv .iconfont {
+  font-size: 4vw;
+}
+.adv .adv-cont {
+  overflow: hidden;
+  flex: 1;
+  margin: 0 2.66666667vw;
+}
+.adv .adv-cont span {
+  display: block;
+  width: 100%;
+  transform: translateX(83.73333333vw);
+  animation: adv-move 8s linear infinite;
+}
+@keyframes adv-move {
+  0% {
+    transform: translateX(83.73333333vw);
+  }
+  100% {
+    transform: translateX(-83.73333333vw);
+  }
+}
+.cat ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cat ul a.flex-center {
+  margin: 2.66666667vw 0;
+  width: 20vw;
+  height: 19.46666667vw;
+}
+.cat ul a.flex-center .pic {
+  width: 12.8vw;
+  height: 12.8vw;
+}
+.cat ul a.flex-center .pic img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.6vw;
+}
+.cat ul a.flex-center .txt {
+  color: #999;
+  font-size: 3.73333333vw;
+}
+.sub-banner a {
+  display: block;
+  height: 34.66666667vw;
+  background-color: pink;
+}
+.sub-banner a img {
+  width: 100%;
+  height: 100%;
+}
+.like .hd {
+  height: 8.8vw;
+  text-align: center;
+  line-height: 8.8vw;
+}
+.like .bd li {
+  margin-bottom: 1.33333333vw;
+}
+.like .bd li:last-child {
+  margin-bottom: 17.33333333vw;
+}
+.like .bd li a {
+  display: flex;
+  padding: 2.93333333vw;
+  background-color: #fff;
+}
+.like .bd li a .pic {
+  width: 34.66666667vw;
+  height: 34.66666667vw;
+  background-color: #8df;
+  margin-right: 6.66666667vw;
+}
+.like .bd li a .pic img {
+  width: 100%;
+  height: 100%;
+}
+.like .bd li a .info {
+  color: #999;
+  font-size: 3.46666667vw;
+  line-height: 5.54666667vw;
+  padding-top: 2.93333333vw;
+}
+.like .bd li a .info h4 {
+  margin-bottom: 1.06666667vw;
+  width: 52.8vw;
+  color: #484848;
+  font-size: 3.73333333vw;
+  line-height: 4.85333333vw;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.like .bd li a .info .price span {
+  margin-right: 2.13333333vw;
+  color: #f03c3c;
+  font-size: 4.26666667vw;
+  line-height: 6.66666667vw;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  font-size: 3.2vw;
+}
+footer ul li a {
+  display: block;
+  width: 25vw;
+  height: 16vw;
+}
+footer ul li a .iconfont {
+  font-size: 6.4vw;
+  margin-bottom: 0.8vw;
+}
+footer ul li a.selected {
+  color: #c21401;
+}
